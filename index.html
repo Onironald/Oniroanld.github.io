@@ -47,7 +47,17 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-f
 h1{font-size:clamp(40px,6.4vw,70px);line-height:1.08;margin:20px 0 14px;max-width:850px;font-weight:800;letter-spacing:-0.02em;background:linear-gradient(180deg,#ffffff, #cbd5e1 130%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:680px;color:#b9c2d4;font-size:18.5px}
 .profile-wrap{display:flex;justify-content:center}
-.profile{width:min(320px,80vw);aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:24px;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow-lg);transition:transform .4s ease}
+.profile{
+  width:min(320px,80vw);
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:24px;
+  border:none;
+  outline:none;
+  box-shadow:none;
+  transition:transform .4s ease
+}
 .profile-wrap:hover .profile{transform:translateY(-6px)}
 
 .buttons{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
