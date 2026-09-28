@@ -47,6 +47,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-f
 h1{font-size:clamp(40px,6.4vw,70px);line-height:1.08;margin:20px 0 14px;max-width:850px;font-weight:800;letter-spacing:-0.02em;background:linear-gradient(180deg,#ffffff, #cbd5e1 130%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:680px;color:#b9c2d4;font-size:18.5px}
 .profile-wrap{display:flex;justify-content:center}
+
 .profile{
   width:min(320px,80vw);
   aspect-ratio:4/5;
@@ -56,9 +57,14 @@ h1{font-size:clamp(40px,6.4vw,70px);line-height:1.08;margin:20px 0 14px;max-widt
   border:none;
   outline:none;
   box-shadow:none;
-  transition:transform .4s ease
+  transition:transform .4s ease;
+  -webkit-mask-image:linear-gradient(to bottom,#000 75%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 75%,transparent 100%);
 }
-.profile-wrap:hover .profile{transform:translateY(-6px)}
+
+.profile-wrap:hover .profile{
+  transform:translateY(-6px);
+}
 
 .buttons{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
 .btn{display:inline-block;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700;font-size:14.5px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
